@@ -50,7 +50,7 @@ export async function Login(req, res){
             if (err) return res.status(400).send(err);
 
             // save token in cookie 
-            res.cookie("x_auth", user.token, { path: '/', sameSite: 'None', domain: 'http://18.222.233.66', })
+            res.cookie("x_auth", user.token, { path: '/', sameSite: 'None', domain: '18.222.233.66', })
             .status(200)
             .json({ loginSuccess: true, userId: user._id })
         })
