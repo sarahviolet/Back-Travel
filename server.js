@@ -24,10 +24,10 @@ import BookingRouter from './app/booking/booking.route.js';
 
 
 const Port = 4000;
-// app.use(cors({credentials:true,origin:'http://localhost:3000'}));
+app.use(cors({credentials:true,origin:'http://18.222.233.66'}));
 // app.use(cors({ credentials: true, origin: '**' }));
 // Allow all origins
-app.use(cors({ credentials: true, origin: (origin, callback) => callback(null, true) }));
+// app.use(cors({ credentials: true, origin: (origin, callback) => callback(null, true) }));
 
 
 
